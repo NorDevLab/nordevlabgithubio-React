@@ -35,8 +35,6 @@ jobs:
       
       - name: Copy
         run: |
-          rm -rf repo-site-current/.github && \
-          rm -rf repo-site-current/.git && \
           cp -r repo-site-current/build/* repo-site/ && \
           cd repo-site && \
           git config user.name "GitHub Actions Bot" && \
