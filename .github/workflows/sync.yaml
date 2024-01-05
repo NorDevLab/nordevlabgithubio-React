@@ -23,8 +23,8 @@ jobs:
         with:
           path: repo-site-current
 
-      - run: sed -i 's,https://unpkg.com/@teleporthq/teleport-custom-scripts,./ndlb.js,g' public/index.html
-        working-directory: ./repo-site-current
+  #    - run: sed -i 's,https://unpkg.com/@teleporthq/teleport-custom-scripts,./ndlb.js,g' public/index.html
+   #     working-directory: ./repo-site-current
         
       - name: build app
         working-directory: ./repo-site-current
