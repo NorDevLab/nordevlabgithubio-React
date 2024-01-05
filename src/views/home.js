@@ -69,9 +69,9 @@ const Home = (props) => {
               </svg>
             </div>
           </div>
-          <span id="logo_text" className="home-text09">
+          <Link to="/" id="logo_text" className="home-text09">
             NORDEVLAB
-          </span>
+          </Link>
         </header>
         <div className="home-container2">
           <div id="tblock" className="home-container3">
