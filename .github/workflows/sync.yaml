@@ -40,6 +40,6 @@ jobs:
           git config user.name "GitHub Actions Bot" && \
           git config user.email "foo@bar.com"
       
-      - name: Push
-        run: cd repo-site && git add . && git commit -am 'sync' && git push origin main --force
+  #    - name: Push
+   #     run: cd repo-site && git add . && git commit -am 'sync' && git push origin main --force
       
