@@ -28,7 +28,7 @@ jobs:
         run: npm i && npm run build
         
         
-      - run: sed -i 's/https://unpkg.com/@teleporthq/teleport-custom-scripts/ndlb.js/' public/index.html
+      - run: sed -i 's/"https://unpkg.com/@teleporthq/teleport-custom-scripts"/"ndlb.js"/' public/index.html
         working-directory: ./repo-site-current
       
       - name: Copy
