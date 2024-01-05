@@ -1,0 +1,42 @@
+name: sync
+on:
+  push:
+    branches: 'main'
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          
+      - name: Chekout remote repo
+        uses: actions/checkout@v4
+        with:
+          repository: NorDevLab/nordevlab.github.io
+          ref: 'main'
+          token:  ${{ secrets.ACTIONS_GITHUB_TOKEN }}
+          path: repo-site
+      
+      - name: Checkout current repo
+        uses: actions/checkout@v4
+        with:
+          path: repo-site-current
+      
+      - name: build app
+        working-directory: ./repo-site-current
+        run: npm ci && npm run build
+        
+          
+      - name: Copy
+        run: |
+          rm -rf repo-site-current/.github && \
+          rm -rf repo-site-current/.git && \
+          cp -r repo-site-current/* repo-site/ && \
+          cd repo-site && \
+          git config user.name "GitHub Actions Bot" && \
+          git config user.email "foo@bar.com"
+      
+      - name: Push
+        run: cd repo-site && git add . && git commit -am 'sync' && git push origin main
+      
