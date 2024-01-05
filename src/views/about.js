@@ -27,8 +27,7 @@ const About = (props) => {
               <button className="button">Register</button>
             </div>
           </div>
-          <div className="about-container2">
-            <div data-thq="thq-burger-menu" className="about-burger-menu"></div>
+          <div data-thq="thq-burger-menu" className="about-burger-menu">
             <svg id="nb_icon_1" viewBox="0 0 1024 1024" className="about-icon">
               <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
             </svg>
@@ -38,7 +37,7 @@ const About = (props) => {
               <div className="about-top">
                 <div data-thq="thq-close-menu" className="about-close-menu">
                   <svg
-                    id="nb_icon_close_1"
+                    id="nb_icon_close"
                     viewBox="0 0 1024 1024"
                     className="about-icon02"
                   >
@@ -47,11 +46,13 @@ const About = (props) => {
                 </div>
               </div>
               <nav className="about-links1">
-                <span className="about-text05">About</span>
-                <span className="about-text06">Features</span>
-                <span className="about-text07">Pricing</span>
-                <span className="about-text08">Team</span>
-                <span className="about-text09">Blog</span>
+                <Link to="/about" className="about-navlink">
+                  About
+                </Link>
+                <span className="about-text05">Features</span>
+                <span className="about-text06">Pricing</span>
+                <span className="about-text07">Team</span>
+                <span className="about-text08">Blog</span>
               </nav>
               <div className="about-buttons1"></div>
             </div>
@@ -76,12 +77,12 @@ const About = (props) => {
               </svg>
             </div>
           </div>
-          <Link to="/home11" id="logo_text" className="about-text10">
+          <Link to="/" id="logo_text_1" className="about-text09">
             NORDEVLAB
           </Link>
         </header>
-        <span className="about-text11">write to us</span>
-        <span className="about-text12">
+        <span className="about-text10">write to us</span>
+        <span className="about-text11">
           We hold the belief that the synergy of design and development must not
           only embody aesthetic appeal but also demonstrate optimal
           functionality. This conviction propels us to consistently pursue
@@ -93,19 +94,18 @@ const About = (props) => {
             }}
           />
         </span>
-        <div className="about-container3"></div>
       </div>
-      <div className="about-container4">
-        <div className="about-container5">
-          <span className="about-text13">
+      <div className="about-container2">
+        <div className="about-container3">
+          <span className="about-text12">
             <span>Little about our company</span>
           </span>
-          <span className="about-text15">
+          <span className="about-text14">
             <span>NORDEVLAB</span>
           </span>
         </div>
-        <div className="about-container6">
-          <span className="about-text17">
+        <div className="about-container4">
+          <span className="about-text16">
             Nordevlab specializes in crafting tailored web pages, mobile
             applications, and software solutions, considering the unique needs
             of each client. Our expertise spans traditional IT solutions as well
@@ -115,13 +115,13 @@ const About = (props) => {
             processes and offer comprehensive solutions for financial companies,
             staying ahead in the dynamic digital landscape.
           </span>
-          <span className="about-text18">
+          <span className="about-text17">
             You will discover the works of Quebec, Canadian and international
             artists. Audiovisual and robotic installations, photographs and
             videos, these works that exist in physical space have been specially
             adapted for diffusion in the 3D digital space of our museum.
           </span>
-          <span className="about-text19">
+          <span className="about-text18">
             Our team, consisting of experienced developers, designers, and
             managers, possesses the necessary competencies for successfully
             implementing projects of any complexity. We prioritize innovation,
@@ -130,7 +130,7 @@ const About = (props) => {
           </span>
         </div>
       </div>
-      <span className="about-text20">CONTACT US</span>
+      <span className="about-text19">CONTACT US</span>
     </div>
   )
 }

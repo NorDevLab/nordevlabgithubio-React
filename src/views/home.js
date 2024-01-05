@@ -81,7 +81,7 @@ const Home = (props) => {
             <span className="home-text11">CONTACT US</span>
             <span className="home-text12">SERVICES</span>
           </div>
-          <div className="home-container4">
+          <div id="text_to_hide" className="home-container4">
             <span className="home-text13">
               <span>DO</span>
             </span>
@@ -99,13 +99,16 @@ const Home = (props) => {
               html={`<script>
   var element = document.getElementById('tblock');
   var element1= document.getElementById('logo_text');
+  var tth= document.getElementById('text_to_hide');
   document.getElementById('nb_icon').onclick = function() {
     element.style.transform = 'translateX(242px)';
     element1.style.transform = 'translateX(242px)';
+    tth.style.transform = 'scale(0)'
   };
   document.getElementById('nb_icon_close').onclick = function() {
     element.style.transform = 'translateX(0px)';
     element1.style.transform = 'translateX(0px)';
+    tth.style.transform = 'scale(1)'
   };
 </script>`}
             ></Script>
