@@ -25,7 +25,7 @@
 }
 .test-desktop-menu {
   flex: 1;
-  display: flex;
+  display: none;
   justify-content: space-between;
 }
 .test-links {
@@ -47,13 +47,6 @@
 .test-text04 {
   margin-left: var(--dl-space-space-twounits);
 }
-.test-burger-menu {
-  display: none;
-}
-.test-icon {
-  width: var(--dl-size-size-xsmall);
-  height: var(--dl-size-size-xsmall);
-}
 .test-buttons {
   display: flex;
   align-items: center;
@@ -64,12 +57,13 @@
   border-width: 0px;
   margin-right: var(--dl-space-space-twounits);
 }
-.test-burger-menu1 {
-  display: none;
+.test-burger-menu {
+  display: flex;
 }
-.test-icon02 {
-  width: var(--dl-size-size-xsmall);
-  height: var(--dl-size-size-xsmall);
+.test-icon {
+  fill: #D9D9D9;
+  width: var(--dl-size-size-small);
+  height: var(--dl-size-size-small);
 }
 .test-mobile-menu {
   top: 0px;
@@ -104,7 +98,7 @@
   align-items: center;
   justify-content: center;
 }
-.test-icon04 {
+.test-icon02 {
   width: var(--dl-size-size-xsmall);
   height: var(--dl-size-size-xsmall);
 }
@@ -140,6 +134,11 @@
 .test-login1 {
   margin-right: var(--dl-space-space-twounits);
 }
+.test-icon04 {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+  margin-right: var(--dl-space-space-twounits);
+}
 .test-icon06 {
   width: var(--dl-size-size-xsmall);
   height: var(--dl-size-size-xsmall);
@@ -148,11 +147,14 @@
 .test-icon08 {
   width: var(--dl-size-size-xsmall);
   height: var(--dl-size-size-xsmall);
-  margin-right: var(--dl-space-space-twounits);
 }
-.test-icon10 {
-  width: var(--dl-size-size-xsmall);
-  height: var(--dl-size-size-xsmall);
+@media(max-width: 1441px) {
+  .test-desktop-menu {
+    display: none;
+  }
+  .test-burger-menu {
+    display: flex;
+  }
 }
 @media(max-width: 767px) {
   .test-navbar-interactive {
@@ -160,15 +162,6 @@
     padding-right: var(--dl-space-space-twounits);
   }
   .test-burger-menu {
-    width: var(--dl-size-size-small);
-    height: var(--dl-size-size-small);
-    align-items: center;
-    justify-content: center;
-  }
-  .test-burger-menu1 {
-    width: var(--dl-size-size-small);
-    height: var(--dl-size-size-small);
-    display: flex;
     align-items: center;
     justify-content: center;
   }
@@ -195,21 +188,6 @@
 @media(max-width: 479px) {
   .test-navbar-interactive {
     padding: var(--dl-space-space-unit);
-  }
-  .test-desktop-menu {
-    display: none;
-  }
-  .test-burger-menu {
-    display: flex;
-  }
-  .test-icon {
-    width: var(--dl-size-size-small);
-    height: var(--dl-size-size-small);
-  }
-  .test-icon02 {
-    fill: #D9D9D9;
-    width: var(--dl-size-size-small);
-    height: var(--dl-size-size-small);
   }
   .test-mobile-menu {
     padding: 16px;
