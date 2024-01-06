@@ -35,7 +35,7 @@ const NavbarInteractive = (props) => {
           className="navbar-interactive-burger-menu"
         >
           <svg
-            id="nb_icon"
+            id="nb_icon_1"
             viewBox="0 0 1024 1024"
             className="navbar-interactive-icon"
           >
@@ -108,7 +108,7 @@ const NavbarInteractive = (props) => {
             </svg>
           </div>
         </div>
-        <Link to="/" id="logo_text" className="navbar-interactive-text09">
+        <Link to="/" id="logo_text_1" className="navbar-interactive-text09">
           {props.text}
         </Link>
       </header>

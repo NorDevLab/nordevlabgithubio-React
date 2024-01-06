@@ -25,9 +25,9 @@ const Home = (props) => {
             <span className="home-text2">SERVICES</span>
           </div>
           <div id="text_to_hide" className="home-container4">
-            <span className="home-text3">
+            <Link to="/test" className="home-text3">
               <span>DO</span>
-            </span>
+            </Link>
             <span className="home-text5">
               <span>WORKING</span>
             </span>

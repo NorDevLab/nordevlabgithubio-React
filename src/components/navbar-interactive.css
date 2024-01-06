@@ -194,6 +194,9 @@
 .navbar-interactive-root-class-name1 {
   align-self: flex-start;
 }
+.navbar-interactive-root-class-name2 {
+  align-self: flex-start;
+}
 @media(max-width: 1441px) {
   .navbar-interactive-desktop-menu {
     display: none;
